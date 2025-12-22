@@ -4,11 +4,11 @@ import { Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 
-const WEBHOOK_URL = import.meta.env.N8N_WEBHOOK_URL;
+const WEBHOOK_URL = "/api/contact";
 
 const ContactForm = () => {
   const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState('idle');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -41,14 +41,15 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (isSubmitting) return;
+
+    if (status === 'loading') return;
 
     if (!formData.name || !formData.email || !formData.message) {
       toast({ title: "Missing info", description: "Please complete name, email, and message." });
       return;
     }
 
-    setIsSubmitting(true);
+    setStatus('loading');
     try {
       const payload = {
         ...formData,
@@ -69,6 +70,8 @@ const ContactForm = () => {
         throw new Error(`Webhook error (${res.status}): ${text || res.statusText}`);
       }
 
+      setStatus('success');
+
       toast({
         title: "Message sent ✅",
         description: "Thanks! I’ll get back to you shortly.",
@@ -87,9 +90,8 @@ const ContactForm = () => {
         description: err instanceof Error ? err.message : "Unknown error",
         variant: "destructive",
       });
-    } finally {
-      setIsSubmitting(false);
     }
+    setStatus('idle');
   };
 
   return (
@@ -162,11 +164,11 @@ const ContactForm = () => {
 
         <Button
           type="submit"
-          disabled={isSubmitting}
+          disabled={status === 'loading'}
           className="w-full bg-[#1A2A40] hover:bg-[#D4AF37] disabled:opacity-60 disabled:cursor-not-allowed text-white ui-sans text-base py-6 transition-all transform hover:scale-105"
         >
-          <Send className={`mr-2 w-5 h-5 ${isSubmitting ? 'animate-pulse' : ''}`} />
-          {isSubmitting ? 'Sending…' : 'Send Message'}
+          <Send className={`mr-2 w-5 h-5 ${status === 'loading' ? 'animate-pulse' : ''}`} />
+          {status === 'loading' ? 'Sending…' : 'Send Message'}
         </Button>
 
 

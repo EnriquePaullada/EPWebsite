@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import { projects } from '@/data/projectsData';
 import ProjectDetail from '@/components/projects/ProjectDetail';
 import usePageEngagement from '@/hooks/usePageEngagement';
@@ -16,10 +15,8 @@ const ProjectPage = () => {
 
   return (
     <>
-      <Helmet>
         <title>{project.name} | Enrique Paullada</title>
         <meta name="description" content={project.description} />
-      </Helmet>
       <ProjectDetail project={project} />
     </>
   );

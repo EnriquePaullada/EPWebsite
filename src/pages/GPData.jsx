@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { ArrowLeft, CheckCircle2, XCircle, Lightbulb, ArrowRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -17,10 +16,8 @@ const GPData = () => {
 
   return (
     <>
-      <Helmet>
         <title>AI Sales Automation Platform | Case Study</title>
         <meta name="description" content="Deep dive into the architecture and development of an autonomous AI sales agent leveraging Python, LLMs, and WhatsApp." />
-      </Helmet>
 
       <div className="min-h-screen bg-white pt-20">
         {/* HERO */}

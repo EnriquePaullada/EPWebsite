@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import ContactForm from '@/components/contact/ContactForm';
 import ContactInfo from '@/components/contact/ContactInfo';
@@ -7,10 +6,8 @@ import ContactInfo from '@/components/contact/ContactInfo';
 const Contact = () => {
   return (
     <>
-      <Helmet>
         <title>Contact - Enrique Paullada</title>
         <meta name="description" content="Get in touch with Enrique Paullada to discuss revenue operations projects, technical consulting, or career opportunities." />
-      </Helmet>
       <div className="pt-20 min-h-screen bg-[#F7FAFC]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <motion.div
