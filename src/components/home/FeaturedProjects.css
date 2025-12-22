@@ -1,0 +1,20 @@
+.featured-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .featured-projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop (md and up) */
+  }
+}
+
+.project-card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
