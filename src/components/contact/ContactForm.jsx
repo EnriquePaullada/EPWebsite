@@ -4,7 +4,7 @@ import { Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 
-const WEBHOOK_URL = "https://pehcao.app.n8n.cloud/webhook/65046bcb-2ba8-40de-bdd7-629a1aee5ab3";
+const WEBHOOK_URL = import.meta.env.N8N_WEBHOOK_URL;
 
 const ContactForm = () => {
   const { toast } = useToast();
