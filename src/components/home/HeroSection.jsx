@@ -14,10 +14,10 @@ const HeroSection = () => {
   const handleCvClick = () => {
     trackDownload('CV_Resume', 'Hero_Section');
   };
-  return <section className="relative bg-gradient-to-br from-[#F7FAFC] via-[#EDF2F7] to-[#E2E8F0] py-4 md:py-8 overflow-hidden">
+  return <section className="relative bg-linear-to-br from-[#F7FAFC] via-[#EDF2F7] to-[#E2E8F0] py-4 md:py-8 overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div className="absolute -top-20 -left-20 w-[600px] h-[500px] bg-gradient-to-br from-blue-400/40 to-indigo-500/30 rounded-full blur-[120px]" animate={{
+        <motion.div className="absolute -top-20 -left-20 w-[600px] h-[500px] bg-linear-to-br from-blue-400/40 to-indigo-500/30 rounded-full blur-[120px]" animate={{
         x: [0, 100, 0],
         y: [0, 80, 0],
         scale: [1, 1.2, 1]
@@ -26,7 +26,7 @@ const HeroSection = () => {
         repeat: Infinity,
         ease: "easeInOut"
       }} />
-        <motion.div className="absolute -bottom-20 -right-20 w-[500px] h-[600px] bg-gradient-to-tl from-purple-400/30 to-pink-400/20 rounded-full blur-[100px]" animate={{
+        <motion.div className="absolute -bottom-20 -right-20 w-[500px] h-[600px] bg-linear-to-tl from-purple-400/30 to-pink-400/20 rounded-full blur-[100px]" animate={{
         x: [0, -80, 0],
         y: [0, -60, 0],
         scale: [1, 1.3, 1]
@@ -235,7 +235,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent via-light-bg/50 to-light-bg pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-b from-transparent via-light-bg/50 to-light-bg pointer-events-none" />
     </section>;
 };
 export default HeroSection;
+
