@@ -119,7 +119,7 @@ const HeroSection = () => {
                 <em className="font-semibold text-[#1A2A40]">AI Solutions Architect</em>
               </p>
               <p className="mb-2">10 years: End-to-end Data Infrastructure, Production Software and Customer-Centric Solutions.</p>
-              <p>3 years: Production AI/ML systems — multi-agent automation, orchestration, and applied LLM solutions.</p>
+              <p>4 years: Production AI/ML systems — multi-agent automation, orchestration, and applied LLM solutions.</p>
               <p className="mt-6 pt-6 border-t-2 border-gray-300 text-lg md:text-xl font-semibold text-[#1A2A40]">
                 ⚡ Featured: <a 
                   href="https://enriquepaullada.com/projects/gp-data" 
