@@ -62,7 +62,7 @@ const FinalCTA = () => {
           </div>
 
           <p className="ui-sans text-sm text-gray-500 pt-4">
-            Based in Mexico City • Relocating to US Q1 2026 • Open to Remote
+            Based in Mexico City • Open to Relocation • Open to Remote
           </p>
         </motion.div>
       </div>
