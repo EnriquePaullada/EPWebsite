@@ -116,7 +116,7 @@ const HeroSection = () => {
             delay: 0.4
           }} className="body-serif text-xl md:text-2xl text-[#2D3748] leading-relaxed mb-8 text-center">
               <p className="mb-4">
-                <em className="font-semibold text-[#1A2A40]">AI Engineer</em>
+                <em className="font-semibold text-[#1A2A40]">AI Solutions Architect</em>
               </p>
               <p className="mb-2">10 years: End-to-end Data Infrastructure, Production Software and Customer-Centric Solutions.</p>
               <p>3 years: Production AI/ML systems — multi-agent automation, orchestration, and applied LLM solutions.</p>
