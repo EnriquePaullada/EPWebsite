@@ -36,7 +36,7 @@ const DismissibleBanner = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-center relative">
         <p className="ui-sans text-sm md:text-base font-semibold">
           <span className="inline-block px-2 py-1 bg-white bg-opacity-20 rounded-md mr-2">🎯</span>
-          Relocating to US Q1 2026 | TN visa eligible
+          TN visa eligible
         </p>
         <Button
           variant="ghost"
