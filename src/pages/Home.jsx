@@ -13,8 +13,8 @@ const Home = () => {
 
   return (
     <>
-        <title>Enrique Paullada - AI Solutions Engineer </title>
-        <meta name="description" content="Founding AI Engineer. 10 years Fortune 50 scale. I build AI-powered systems that drive measurable business outcomes." />
+        <title>Enrique Paullada - AI Solutions Architect </title>
+        <meta name="description" content="10 years Fortune 50 scale. I build AI-powered systems that drive measurable business outcomes." />
       {/* The banner is rendered before the main content and navigation adjustments are handled in App.jsx */}
       <DismissibleBanner /> 
       {/* The pt-20 on this div will now account for the combined height of the fixed banner and navigation */}
