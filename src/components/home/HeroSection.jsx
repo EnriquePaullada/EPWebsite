@@ -152,7 +152,7 @@ const HeroSection = () => {
               text: "Complex Business requirements → explainable & scalable Outcome-First AI design",
               delay: 0.6
             }, {
-              text: "Delivered 80% cost reductions and 75% faster development at Fortune 50 scale",
+              text: "Delivered 80% cost reductions and 75% faster development at Fortune 20 scale",
               delay: 0.7
             }].map((item, i) => <motion.div key={i} initial={{
               opacity: 0,
