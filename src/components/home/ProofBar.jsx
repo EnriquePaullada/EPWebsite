@@ -21,8 +21,8 @@ const ProofBar = () => {
     },
     {
       icon: TrendingDown,
-      number: "BUDGET OPTIMIZATION",
-      label: "Delivered key infrastructure and IT asset projects up to 80% under budget through strategic negotiation and technical optimization.",
+      number: "80% COST REDUCTION",
+      label: "In key infrastructure and IT asset projects through strategic negotiation and technical optimization.",
     },
   ];
 
