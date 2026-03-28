@@ -6,8 +6,8 @@ const ProofBar = () => {
   const stats = [
     {
       icon: Briefcase,
-      number: "10 YEARS AT FORD",
-      label: "Shipped operation-critical systems and led business key projects in a Fortune 50 environment.",
+      number: "10 YEARS - FORTUNE 20 SCALE",
+      label: "Production systems, Enterprise rigor, international stakeholders.",
     },
     {
       icon: Award,
