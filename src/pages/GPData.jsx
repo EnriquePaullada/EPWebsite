@@ -232,8 +232,8 @@ const GPData = () => {
 
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <div className="bg-[#1A2A40] text-white p-8 rounded-xl">
-              <p className="text-xl font-semibold mb-4">That's why I'm targeting Founding AI Engineer roles.</p>
-              <p className="text-gray-300 leading-relaxed">I want to apply this hard-learned skillset to supercharge teams that already validated market demand.</p>
+              <p className="text-xl font-semibold mb-4">That's why I'm targeting AI Solutions Architecture roles.</p>
+              <p className="text-gray-300 leading-relaxed">I want to apply this hard-learned skillset to supercharge teams with robust commercial teams.</p>
             </div>
             <p className="text-2xl font-bold text-[#1A2A40]">Fortune 20 scale + startup speed + 0→1 grit + Impact-Focus</p>
           </div>
